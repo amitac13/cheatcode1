@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let data = [2,3,4,5,6,7]
+        // let sum=0
+        // data.forEach(num => sum+= num*2)
+        // console.log(sum);
+
+//         let data = [2, 3, 4, 5, 6, 7];
+// let sum = 0;
+
+// data.forEach(num => {
+//   if (num % 2 === 0) {
+//     sum += num ; 
+//   }
+// });
+// console.log(sum);
+
+let items = [
+  { name: "חולצה", price: 50 },
+  { name: "מכנסיים", price: 120 },
+  { name: "נעליים", price: 200 },
+  { name: "שעון", price: 150 },
+  { name: "תיק", price: 80 }
+];
+let threshold = 100; 
+let totalPrice = items
+  .filter(item => item.price > threshold)  
+  .reduce((sum, item) => sum + item.price, 0);  
+console.log(totalPrice);  
+
+
+    </script>
+</body>
+</html>
